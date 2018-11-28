@@ -1,0 +1,199 @@
+@font-face {
+    font-family: ShoppingScript;
+    src: url(ShoppingScript.ttf);
+}
+
+#image-container {
+  width: 95%;
+  margin: auto;
+}
+
+.image-row{
+  width: 100%;
+  float: left;
+}
+
+.image-cell{
+  float: left;;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* .image-cell:hover{
+  cursor: pointer;
+  opacity: 0.85;
+} */
+
+.image{
+  width: 100%;
+  padding: 5px 10px !important;
+  box-sizing: content-box !important;
+}
+
+#collection-info{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+h6{
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+p{
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  color: rgb(140, 140, 140);
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+#nav-title{
+  font-family: ShoppingScript, sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+#index-body{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#index-body #nav-title{
+  color: white;
+}
+
+.index-body-bg{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index-body-bg img{
+  height  : 100%;
+  margin: auto;
+}
+
+.index-body-header{
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 40%;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: 8px;
+  margin-top: 25%;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.15);
+  float: left;
+}
+
+.index-body-subheader{
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 40%;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.15);
+  float: left;
+}
+
+.index-body-link{
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 40%;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  float: left;
+}
+
+.circle-it{
+  border: 2px solid white;
+  height: 24px;
+  width: 24px;
+  font-size: 18px;
+  border-radius: 24px;
+  text-align: center;
+  display: inline-block;
+}
+
+.circle-it i{
+  line-height: 20px;
+  text-align: center;
+  padding-left: 3px;
+}
+
+.index-body-link:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.index-body-link:hover > .circle-it, #body-404-subhead a:hover > .circle-it{
+  transition: .2s;
+  background-color: rgb(255,255,255);
+  color: rgb(120, 120, 180);
+}
+
+#body-404-cover {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('lauga-lava.jpg')
+}
+
+#body-404-head{
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-size: 124px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 900;
+  letter-spacing: 20px;
+}
+
+#body-404-subhead{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#body-404-subhead a{
+  color: white;
+}
+
+#body-404-subhead a:hover{
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}

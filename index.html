@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/cng0hiz.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="backpack.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Iceland &middot; Cole Hoffer Photography</title>
+  </head>
+
+  <body>
+    <div id="index-body">
+      <div class="index-body-bg" id="index-iceland" style="background-image: url('assets/skogafoss-together.jpg')">
+        <div class="index-body-header">
+          Iceland
+        </div>
+
+        <div class="index-body-subheader">
+          Powerful waterfalls, vast highlands, and gorgeous adventures
+        </div>
+
+        <a class="index-body-link" href="iceland.html">
+          View Gallery <div class="circle-it"><i class="fas fa-angle-right"></i></div>
+        </a>
+      </div>
+
+
+      <div class="index-body-bg" id="index-washington" style="display: none; background-image: url('assets/rainier-main.jpg')">
+        <div class="index-body-header">
+          Washington
+        </div>
+
+        <div class="index-body-subheader">
+          A collection of glacier lakes, alpine peaks, and wild coastlines
+        </div>
+
+        <a class="index-body-link" href="washington.html">
+          View Gallery <div class="circle-it"><i class="fas fa-angle-right"></i></div>
+        </a>
+      </div>
+
+
+      <div class="index-body-bg" id="index-lauga" style="display: none; background-image: url('assets/landmann-main.jpg')">
+        <div class="index-body-header">
+          Laugavegur Trek
+        </div>
+
+        <div class="index-body-subheader">
+          From Landmannanaular to Thorsmork, a 4-day trek through the Icelandic Highlands
+        </div>
+
+        <a class="index-body-link" href="#.html">
+          View Adventure <div class="circle-it"><i class="fas fa-angle-right"></i></div>
+        </a>
+      </div>
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark p-4">
+        <a class="navbar-brand" href="index.html" id="nav-title">Cole Hoffer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="washington.html">Washington</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="iceland.html">Iceland</a>
+            </li>
+
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Adventure Journals
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="404.html">The Enchantments</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="404.html">Laugavegur Trek</a>
+                <a class="dropdown-item" href="404.html">Fimmvörðuháls Pass</a>
+              </div>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link" href="404.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      setInterval(function() {
+        if ($('#index-iceland').is(':visible')) {
+          $("#index-washington").fadeIn("slow", function(){
+              $("#index-iceland").fadeOut("fast");
+          });
+        } else if ($('#index-washington').is(':visible')) {
+          $("#index-lauga").fadeIn("slow", function(){
+              $("#index-washington").fadeOut("fast");
+          });
+        } else if ($('#index-lauga').is(':visible')) {
+          $("#index-iceland").fadeIn("slow", function(){
+              $("#index-lauga").fadeOut("fast");
+          });
+        }
+
+      }, 7500);
+    </script>
+  </body>
+
+</html>
