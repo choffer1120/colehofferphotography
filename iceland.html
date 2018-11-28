@@ -377,7 +377,7 @@
 
           let widthSum = aspectRatios.reduce(getSum);
           for (j=0; j < imageCells.length; j++){
-            if (containerWidth > 720){
+            if (containerWidth > 860){
               imageCells[j].style.width = ((aspectRatios[j] / widthSum) * containerWidth);
             } else {
               imageCells[j].style.width = containerWidth
